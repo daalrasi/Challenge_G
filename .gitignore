@@ -1,8 +1,0 @@
-Include/
-Lib/
-scripts/
-pyvenv.cfg
-pyodbc.pyi
-server.py
-__pycache__
-config.json
