@@ -1,6 +1,0 @@
-{
-  "items": [
-    { "id": 50021, "name": "Curl A", "datetime": "2021-02-03T08:00:00", "department_id": 1, "job_id": 1 },
-    { "id": 50022, "name": "Curl B", "datetime": "2021-02-04T09:00:00", "department_id": 2, "job_id": 2 }
-  ]
-}
