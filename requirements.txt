@@ -1,8 +1,0 @@
-fastapi
-bcrypt
-python-multipart
-uvicorn
-sqlalchemy
-pyton-jose
-pyodbc
-passlib
