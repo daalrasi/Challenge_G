@@ -4,7 +4,8 @@ Deployment Challenge_G
 This project implements the Globant Challenge Daniel Silva using 
 **FastAPI, PostgreSQL, and Docker**.  
 It used for data ingestion from CSV files, batch inserts with validation, and analytical queries for reporting.  
-<img width="468" height="116" alt="image" src="https://github.com/user-attachments/assets/037ae4d8-1d62-45bc-9b17-08be9fb28ce3" />
+
+
 ## Tech Stack
 
 - **FastAPI**
@@ -13,13 +14,16 @@ It used for data ingestion from CSV files, batch inserts with validation, and an
 - **SQLAlchemy**
 - **Pydantic**
   
-<img width="468" height="116" alt="image" src="https://github.com/user-attachments/assets/037ae4d8-1d62-45bc-9b17-08be9fb28ce3" />
+
 
 ## Running the Application
 
 requeriments.txt: This file has content related to requirements to external packages needed to run API functionalities.
 
 Clone the repository and start the services with Docker Compose:
+
+<img width="1470" height="832" alt="Screenshot 2025-09-17 at 12 39 54 PM" src="https://github.com/user-attachments/assets/2175e8b6-06ab-4b36-8a2e-f56dcec3bd7e" />
+
 
 bash
 docker compose up --build
