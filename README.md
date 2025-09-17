@@ -174,6 +174,9 @@ brew install ngrok/ngrok/ngrok
 # add authtoken (Dashboard de ngrok)
 ngrok config add-authtoken <TU_AUTHTOKEN>
 
+<img width="1240" height="471" alt="Screenshot 2025-09-17 at 3 54 06 PM" src="https://github.com/user-attachments/assets/13df3ef3-79a9-4501-8c39-cb2365cdae20" />
+
+
 - **make dev**
 - **Open Tunnel** (ngrok http 8081)
 
