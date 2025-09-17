@@ -36,7 +36,6 @@ The following services will be available:
 
 •	Database: PostgreSQL exposed at localhost:5432
 
-<img width="468" height="116" alt="image" src="https://github.com/user-attachments/assets/037ae4d8-1d62-45bc-9b17-08be9fb28ce3" />
 
 ## API Endpoints
 
@@ -46,6 +45,9 @@ The following services will be available:
 Response:
 {"status":"ok"}
 
+
+<img width="1461" height="842" alt="Screenshot 2025-09-17 at 2 34 50 PM" src="https://github.com/user-attachments/assets/18e3469c-e24e-45d5-8742-dff62e552be5" />
+
 ## CSV Upload
 Upload data directly into the target tables: departments, jobs, hired_employees.
 
@@ -54,7 +56,10 @@ Example – Upload:
 curl -F "file=@departments.csv" "http://localhost:8081/upload_csv?table=departments"
 
 Response:
-{"inserted_or_updated": 12, "skipped_rows": 0}
+{"inserted_or_updated": 10, "skipped_rows": 0}
+
+<img width="1425" height="831" alt="Screenshot 2025-09-17 at 2 36 18 PM" src="https://github.com/user-attachments/assets/5c05d886-b835-4f2a-b609-4d988c884e0f" />
+
 
 Tables supported:
 - **departments(id, department)**
@@ -69,8 +74,10 @@ Tables supported:
 
 - **batch_1000.json -- Example Especific 1000**
 - **batch_1001.json -- Example more 1000**
+  
+<img width="1434" height="834" alt="Screenshot 2025-09-17 at 2 37 17 PM" src="https://github.com/user-attachments/assets/deb59861-0fab-4f59-8355-c35e45c4dfd2" />
 
-
+  
 schema json
 
 {
@@ -79,6 +86,8 @@ schema json
     { "id": 50022, "name": "User B", "datetime": "2021-02-04T09:00:00", "department_id": 2, "job_id": 2 }
   ]
 }
+
+<img width="1456" height="813" alt="Screenshot 2025-09-17 at 2 38 34 PM" src="https://github.com/user-attachments/assets/4be3ef77-1113-4ec0-8d80-b685604a11a2" />
 
 
 
@@ -90,6 +99,9 @@ Generate the metrics quarterly hires
 
 - **Quarterly Hires**  
   http://localhost:8081/docs#/Metrics/q_hires_metrics_q_hires_get
+
+  <img width="1428" height="839" alt="Screenshot 2025-09-17 at 2 39 25 PM" src="https://github.com/user-attachments/assets/807b7020-5691-4204-b3f2-81e5c032c50e" />
+
 
 SELECT d.department, j.job,
                COUNT(*) FILTER (WHERE EXTRACT(QUARTER FROM he.datetime) = 1) AS q1,
@@ -107,6 +119,9 @@ SELECT d.department, j.job,
 
 - **Top Departments**  
   http://localhost:8081/docs#/Metrics/top_departments_metrics_top_departments_get
+
+  <img width="1419" height="835" alt="Screenshot 2025-09-17 at 2 40 10 PM" src="https://github.com/user-attachments/assets/d914e3b1-cc1d-4ddb-a233-c612be465f7b" />
+
 
  WITH per_dept AS (
   SELECT d.id, d.department,
@@ -164,7 +179,9 @@ ngrok config add-authtoken <TU_AUTHTOKEN>
 
 # Page Public
 
-- **https://5bdd077e7601.ngrok-free.app/docs**
-- **https://5bdd077e7601.ngrok-free.app/healthz**
-- **https://5bdd077e7601.ngrok-free.app/metrics/q_hires?year=2021**
-- **https://5bdd077e7601.ngrok-free.app/metrics/top_departments?year=2021**
+<img width="1457" height="831" alt="Screenshot 2025-09-17 at 2 41 29 PM" src="https://github.com/user-attachments/assets/6d4d004b-c4ff-4b3e-bd39-b51effa8fb88" />
+
+- **https://4023a63d4740.ngrok-free.app/docs**
+- **https://4023a63d4740.ngrok-free.app/healthz**
+- **https://4023a63d4740.ngrok-free.app/metrics/q_hires?year=2021**
+- **https://4023a63d4740.ngrok-free.app/metrics/top_departments?year=2021**
