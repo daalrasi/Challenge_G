@@ -12,7 +12,6 @@ It used for data ingestion from CSV files, batch inserts with validation, and an
 - **Docker Compose**
 - **SQLAlchemy**
 - **Pydantic**
-- **ngrok**
   
 <img width="468" height="116" alt="image" src="https://github.com/user-attachments/assets/037ae4d8-1d62-45bc-9b17-08be9fb28ce3" />
 
@@ -153,7 +152,7 @@ Returned when the request passes schema validation but violates business rules o
 # macOS (Homebrew)
 brew install ngrok/ngrok/ngrok
 
-# Register and add authtoken (Dashboard de ngrok)
+# add authtoken (Dashboard de ngrok)
 ngrok config add-authtoken <TU_AUTHTOKEN>
 
 - **make dev**
@@ -161,21 +160,7 @@ ngrok config add-authtoken <TU_AUTHTOKEN>
 
 # Page Public
 
-- **https://4023a63d4740.ngrok-free.app/docs**
-- **https://4023a63d4740.ngrok-free.app/healthz**
-- **https://4023a63d4740.ngrok-free.app/metrics/q_hires?year=2021**
-- **https://4023a63d4740.ngrok-free.app/metrics/top_departments?year=2021**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- **https://5bdd077e7601.ngrok-free.app/docs**
+- **https://5bdd077e7601.ngrok-free.app/healthz**
+- **https://5bdd077e7601.ngrok-free.app/metrics/q_hires?year=2021**
+- **https://5bdd077e7601.ngrok-free.app/metrics/top_departments?year=2021**
